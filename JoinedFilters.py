@@ -1,4 +1,4 @@
-from Filters_functions import grayscale, box_blur, sobel_edge_detection, canny_edge_detection, global_segmentation, kmeans_segmentation
+from filters_functions import grayscale, box_blur, sobel_edge_detection, canny_edge_detection, global_segmentation, kmeans_segmentation
 from customtkinter import CTk, CTkLabel, CTkImage, CTkFrame
 from cv2 import VideoCapture, cvtColor, COLOR_BGR2RGB
 from typing import List, Callable, Tuple, Optional
@@ -6,13 +6,13 @@ from cv2.typing import MatLike
 from constants import *
 from PIL import Image
 
-class JoinedCanvases(CTk):
+class JoinedFilters(CTk):
     """
     A window containing canvases for each image filter
     """
     def __init__(self) -> None:
         """
-        Initializes the JoinedCanvases object.
+        Initializes the JoinedFilters object.
         """
         super().__init__()
         window_width: int = 600

@@ -30,7 +30,7 @@ class FilterProperties(CTkFrame):
 
     def generate(self) -> None:
         """
-        Generates properties to easily control image filter props.
+        Generates sliders to easily control image filter props.
         """
         if self.parent.current_image_filter is None:
             return

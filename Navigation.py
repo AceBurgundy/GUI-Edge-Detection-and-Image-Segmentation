@@ -7,10 +7,10 @@ from typing import TYPE_CHECKING, List, Optional
 if TYPE_CHECKING:
     from Program import App
 
-from Filters import GrayscaleConverter, BoxBlurFilter, SobelEdgeDetector, CannyEdgeDetector, GlobalSegmentation, KMeansSegmentation
+from filters import GrayscaleConverter, BoxBlurFilter, SobelEdgeDetector, CannyEdgeDetector, GlobalSegmentation, KMeansSegmentation
 from save import open_file_dialog, save_file_dialog
 from custom_types import IMAGE_FILTER_TYPES
-from All import JoinedCanvases
+from JoinedFilters import JoinedFilters
 from CTkToast import CTkToast
 from constants import *
 
@@ -34,14 +34,14 @@ class Navigation(CTkFrame):
         """
         super().__init__(parent, **kwargs)
         self.parent: App = parent
-        self.create_image_buttons()
+        self.create_filter_buttons()
 
         def open_joined_canvas() -> None:
             """
             Stops the app and opens a new window containing all canvas and options
             """
             self.parent.destroy()
-            JoinedCanvases().mainloop()
+            JoinedFilters().mainloop()
 
         def load_image() -> None:
             """
@@ -93,7 +93,7 @@ class Navigation(CTkFrame):
                 button.configure(text=text)
                 button.pack(side="left", padx=DEFAULT_PADDING, pady=(10, 0))
 
-    def create_image_buttons(self):
+    def create_filter_buttons(self):
         """
         Creates the image option buttons for the canvas
         """

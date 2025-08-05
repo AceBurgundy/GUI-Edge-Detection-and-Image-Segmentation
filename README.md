@@ -1,41 +1,134 @@
 # GUI Edge Detection and Image Segmentation
 
-Welcome to the GUI Edge Detection and Image Segmentation App! Before you can start using the app, please follow these instructions carefully.
+---
 
-## Prerequisites
-- Make sure you have the latest version of Python installed on your system.
-- (Optional) Create a virtual environment.
+## 🧠 Project Overview
 
-## Installation
-1. Clone or download this repository to your local machine.
-2. Open a terminal or command prompt and navigate to the project's root directory.
+This project was developed as part of our **3rd Year Software Engineering course**, designed to introduce us to **Python GUI programming** and **image processing techniques**. The app provides an interactive interface where users can apply multiple edge detection filters and segmentation methods to an image and adjust their thresholds dynamically.
 
-   ```shell
-   cd path/to/GUI-Edge-Detection-and-Image-Segmentation 
+The primary goal was to combine UI development with real-time computer vision using `customtkinter` and `OpenCV`.
 
-3. Install the required libraries from the requirements.txt file using pip:
+---
 
-   ```shell
+## ✨ Features
+
+* 🖼️ **Multiple Edge Detection Filters**:
+
+  * Canny
+  * Sobel (X and Y)
+  * Laplacian
+  * Prewitt
+
+* 🎚️ **Interactive Threshold Sliders**:
+
+  * Modify upper and lower thresholds for applicable filters in real-time.
+
+* 🔄 **Instant Feedback**:
+
+  * View updated output immediately after adjusting any setting.
+
+* 🧩 **CustomTkinter Interface**:
+
+  * Clean, modern, and responsive GUI layout with theme support.
+
+* 🗂️ **Supports Multiple Filters**:
+
+  * View and compare all filters simultaneously.
+
+---
+
+## 🛠️ Technologies Used
+
+* **Python 3.x**
+* **OpenCV** – for all computer vision and edge detection algorithms.
+* **CustomTkinter** – for the sleek GUI.
+* **NumPy** – for array operations and image handling.
+* **Pillow (PIL)** – for loading and converting image formats.
+
+---
+
+## 📦 Installation
+
+### 🔧 Prerequisites
+
+* Python 3.8 or higher
+* (Optional) Create and activate a virtual environment:
+
+  ```bash
+  python -m venv venv
+  source venv/bin/activate  # On Windows: venv\Scripts\activate
+  ```
+
+### 📥 Steps
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/GUI-Edge-Detection-and-Image-Segmentation.git
+   cd GUI-Edge-Detection-and-Image-Segmentation
+   ```
+
+2. Install the required dependencies:
+
+   ```bash
    pip install -r requirements.txt
+   ```
 
-## Running the App
+---
 
-    python Program.py
+## ▶️ Running the App
 
-The App should now load and you should now be able to use the app
+Run the program using:
 
-## Images
+```bash
+python Program.py
+```
 
-![UI](UI.png)
-![All filters](All.png)
+The GUI will launch, and you can begin experimenting with different edge detection filters and their thresholds.
 
-## Acknowledgements
+---
 
-- [OpenCV](https://docs.opencv.org/4.x/d6/d00/tutorial_py_root.html): Where all of the AI functionality of this app comes from.
+## 📸 Screenshots
 
-## License
+| GUI Interface | All Filters View        |
+| ------------- | ----------------------- |
+| ![UI](UI.png) | ![All Filters](All.png) |
 
-This project is licensed under the GNU General Public License v3.0 - see the [LICENSE](LICENSE) file for details.
+---
 
-The GPL-3.0 license grants users the freedom to use, modify, and distribute this software under certain conditions. It also requires that any modifications made to the software are also licensed under the GPL-3.0.
+## 📈 Learning Outcomes
+
+Through this project, we learned how to:
+
+* Build modern Python GUIs with **CustomTkinter**.
+* Use **OpenCV** for real-time image processing.
+* Apply and differentiate between multiple edge detection algorithms.
+* Handle GUI-to-logic interaction in a clean and maintainable way.
+* Work with sliders and real-time updates for computer vision tasks.
+
+---
+
+## 🔮 Future Improvements
+
+* Add support for **live webcam input**.
+* Implement **segmentation techniques** like watershed or k-means.
+* Allow **image saving and export** of processed results.
+* Provide **preset options** for popular configurations.
+* Include basic **histogram visualizations** for pixel distributions.
+
+---
+
+## 🙏 Acknowledgements
+
+* [OpenCV](https://opencv.org/) – for the core image processing functionalities.
+* [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) – for the beautifully styled modern GUI framework.
+* Big thanks to our instructors and peers for guidance and feedback.
+
+---
+
+## 📄 License
+
+This project is licensed under the **GNU General Public License v3.0** – see the [LICENSE](LICENSE) file for details.
+
+> The GPL-3.0 license permits free use, modification, and redistribution, with the requirement that derivative works remain open-source under the same license.
 

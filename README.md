@@ -1,7 +1,5 @@
 # GUI Edge Detection and Image Segmentation
 
----
-
 ## 🧠 Project Overview
 
 This project was developed as part of our **3rd Year Software Engineering course**, designed to introduce us to **Python GUI programming** and **image processing techniques**. The app provides an interactive interface where users can apply multiple edge detection filters and segmentation methods to an image and adjust their thresholds dynamically.

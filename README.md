@@ -4,9 +4,7 @@
 
 This project was developed as part of our **3rd Year Software Engineering course**, designed to introduce us to **Python GUI programming** and **image processing techniques**. The app provides an interactive interface where users can apply multiple edge detection filters and segmentation methods to an image and adjust their thresholds dynamically.
 
-The primary goal was to combine UI development with real-time computer vision using `customtkinter` and `OpenCV`.
-
----
+The primary goal was to combine UI development with real-time computer vision using `customtkinter` and `OpenCV`.    
 
 ## ✨ Features
 
@@ -33,8 +31,6 @@ The primary goal was to combine UI development with real-time computer vision us
 
   * View and compare all filters simultaneously.
 
----
-
 ## 🛠️ Technologies Used
 
 * **Python 3.x**
@@ -42,8 +38,6 @@ The primary goal was to combine UI development with real-time computer vision us
 * **CustomTkinter** – for the sleek GUI.
 * **NumPy** – for array operations and image handling.
 * **Pillow (PIL)** – for loading and converting image formats.
-
----
 
 ## 📦 Installation
 
@@ -70,9 +64,7 @@ The primary goal was to combine UI development with real-time computer vision us
 
    ```bash
    pip install -r requirements.txt
-   ```
-
----
+   ```    
 
 ## ▶️ Running the App
 
@@ -84,15 +76,11 @@ python Program.py
 
 The GUI will launch, and you can begin experimenting with different edge detection filters and their thresholds.
 
----
-
 ## 📸 Screenshots
 
 | GUI Interface | All Filters View        |
-| ------------- | ----------------------- |
+|                 - |                             -- |
 | ![UI](UI.png) | ![All Filters](All.png) |
-
----
 
 ## 📈 Learning Outcomes
 
@@ -104,8 +92,6 @@ Through this project, we learned how to:
 * Handle GUI-to-logic interaction in a clean and maintainable way.
 * Work with sliders and real-time updates for computer vision tasks.
 
----
-
 ## 🔮 Future Improvements
 
 * Add support for **live webcam input**.
@@ -114,19 +100,14 @@ Through this project, we learned how to:
 * Provide **preset options** for popular configurations.
 * Include basic **histogram visualizations** for pixel distributions.
 
----
-
 ## 🙏 Acknowledgements
 
 * [OpenCV](https://opencv.org/) – for the core image processing functionalities.
 * [CustomTkinter](https://github.com/TomSchimansky/CustomTkinter) – for the beautifully styled modern GUI framework.
 * Big thanks to our instructors and peers for guidance and feedback.
-
----
-
+    
 ## 📄 License
 
 This project is licensed under the **GNU General Public License v3.0** – see the [LICENSE](LICENSE) file for details.
 
 > The GPL-3.0 license permits free use, modification, and redistribution, with the requirement that derivative works remain open-source under the same license.
-
